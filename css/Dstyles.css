@@ -1,1 +1,229 @@
+/*Developer: Lezette Boutin
+Table of Contents
+HEADER - Discography: Mumford & Sons
+MAINCONTENT - Mumford & Sons band & music information
+FOOTER - copyrightht 2019
+ Color Palette
+#000; - black 
+#1E2422 - nearly black
+#220120 - purple black
+#a5294c - warm cranberry
+#88BEB1 - sage green
+#718A94 - slate gray
+#bac6cb - light gray
+#FFF; - white
+*/
+/* Global styles
+---------------------------*/
+/****** limited reset ******/
+html, body, main, section, h1, h2, h3, h4, h5, h6, p, a, ol, ul, li, 
+nav, span, div, img, figure, figcaption, footer, #submit{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+/* Main Content - phone sized
+---------------------------*/
+body{
+	background: #d3dbde;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	margin: .5em;
+}
+h1, h2, h3, h4, h5, h6{
+	color: /*#220120*/ #3b0238 /*#62045d*/;
+	font-family: Times, "Times New Roman", serif;
+	text-transform: uppercase;
+}
+p{
+	color: #000;
+	font-size: 1em;
+}
+img{
+	display: block;
+	margin: auto;
+	max-width: 285px;
+	outline: 4px inset #62045d;
+}
+
+
+/* Header styling
+---------------------------*/
+.banner{
+	width: auto;
+}
+.banner h1{
+	text-align: center;
+}
+.logo img{
+	display: block;
+	max-width: 75px;
+	outline: none;
+	margin: auto;
+}
+h1{
+	font-size: 1.95em;
+	/*margin: 0 0 .3em;*/
+}
+
+/* Navigation styling
+---------------------------*/
+
+.main-nav li{
+	list-style-type: none;
+	margin: 0 2em .8em;
+	padding: .15em;
+	/*outline: 1px solid blue;*/
+}
+.main-nav a{
+	color: #a5294c;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0 0 0 25%;
+}
+
+.there{/*nav 'top' button*/
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+	}
+
+/* About styling
+---------------------------*/
+
+h2{
+	margin: 1em 0;
+	font-size: 1.6em;
+}
+p{
+	margin: 0 1em;
+}
+
+/* Band Members styling
+---------------------------*/
+/*-- ****  cards  **** --*/
+
+h3{
+	margin: 1.6em 0 1em;
+	font-size: 1.6em;
+}
+.cards figcaption{
+	margin: 1em 0 2em;
+}
+.cards li{
+	list-style-type: none;
+}
+
+/* Albums styling
+---------------------------*/
+/*-- ****  albums  **** --*/
+
+.albums > li{
+	list-style-type: none;
+}
+.albums a{
+	color: #000;
+}
+.albums h3{
+	margin: 1em 0 0;
+	font-size: 1.6em;
+}
+/*.albums figcaption{
+	margin: 1em 0;
+}*/
+ol{
+	list-style-type: numbers;
+}
+.album ol{
+	margin: 1.5em 0 2.5em 2.6em;
+}
+span{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: .8em;
+	font-weight: lighter;
+	padding: .205em 0 0;
+}
+ol span{
+	float: right;
+	margin-right: 3em;
+}
+
+/* Main Form styling
+---------------------------*/
+/*-- ****  form  **** --*/
+
+.maim-form{
+	clear: right;
+	margin: 1em 0;
+}
+
+
+/* Footer styles
+---------------------------*/
+
+.footer{
+	background: #3b0238
+	color: color: #a5294c;
+	margin: 2em 0 3em;
+}
+
+
+@media screen and (min-width: 400px){
+
+	img{
+		max-width: 95%;
+	}
+
+}
+
+@media screen and (min-width: 500px){
+
+	#about{
+		margin: 0 6%;
+	}
+	#members{
+		margin: 0 6%;
+	}
+	#main-albums h3{
+		margin: 1em 6%; 
+	}
+	.cards figcaption{
+		margin: auto;
+		max-width: 95%;
+	}
+	.albums figcaption{
+		margin: auto;
+		max-width: 60%;
+	}
+	p{
+	margin: 1em 0 2em;
+	}
+}
+@media screen and (min-width: 600px){
+
+	body{
+		max-width: 70%;
+		margin: auto;
+	}
+	.main-nav li{
+		list-style-type: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
