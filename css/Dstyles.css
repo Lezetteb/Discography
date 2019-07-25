@@ -44,7 +44,7 @@ img{
 	display: block;
 	margin: auto;
 	max-width: 285px;
-	outline: 4px inset #62045d;
+	outline: 5px inset #62045d;
 }
 
 
@@ -64,34 +64,51 @@ img{
 }
 h1{
 	font-size: 1.95em;
-	/*margin: 0 0 .3em;*/
+	margin: .2em 0 .1em;
 }
 
 /* Navigation styling
 ---------------------------*/
 
-.main-nav li{
+.main-nav ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
 	list-style-type: none;
-	margin: 0 2em .8em;
-	padding: .15em;
+}
+.main-nav li{
+	
+	margin: .6em 2em 0;
+	padding: .15em 3em;
 	/*outline: 1px solid blue;*/
 }
 .main-nav a{
 	color: #a5294c;
 	font-size: 1.2em;
-	font-weight: bold;
-	margin: 0 0 0 25%;
+	font-weight: normal;
+	text-shadow: 1px 1px 0 #000;
+}
+.main-nav a:focus, .main-nav a:hover{
+	text-decoration: underline;
 }
 
 .there{/*nav 'top' button*/
 		position: fixed;
 		bottom: 10px;
 		right: 10px;
+		margin: 0;
+		padding: 0;
 	}
+
 
 /* About styling
 ---------------------------*/
 
+#about img{
+	margin-top: .4em;
+}
 h2{
 	margin: 1em 0;
 	font-size: 1.6em;
@@ -168,12 +185,30 @@ ol span{
 	margin: 2em 0 3em;
 }
 
+/* larger screen styles
+---------------------------*/
 
 @media screen and (min-width: 400px){
 
 	img{
 		max-width: 95%;
 	}
+
+	.main-nav{
+		margin-bottom: .3em; 
+	}
+	.main-nav ul{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.main-nav li{
+	
+	margin: .3em;
+	padding: .2em;
+	/*outline: 1px solid blue;*/
+	font-size: .96em;
+	}
+
 
 }
 
@@ -206,10 +241,15 @@ ol span{
 		max-width: 70%;
 		margin: auto;
 	}
-	.main-nav li{
+	/*.main-nav li{
 		list-style-type: none;
-	}
+	}*/
 }
+
+
+
+
+
 
 
 
