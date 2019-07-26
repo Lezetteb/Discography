@@ -180,14 +180,16 @@ ol span{
 ---------------------------*/
 /*-- ****  form  **** --*/
 
+h6{
+	text-transform: none;
+	font-size: 1.6em;
+}
 .maim-form{
 	clear: right;
 }
 #form{
 	margin: 0 0 2em 3em;
 }
-
-
 /* Footer styles
 ---------------------------*/
 
