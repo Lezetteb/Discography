@@ -21,10 +21,10 @@ FOOTER - copyrightht 2019
 html, body, main, section, h1, h2, h3, h4, h5, h6, p, a, ol, ul, li, 
 nav, span, div, img, figure, figcaption, footer, #submit{
 	border: 0;
+	line-height: 1.5;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	line-height: 1.5;
 }
 
 /* Main Content - phone sized
@@ -32,16 +32,16 @@ nav, span, div, img, figure, figcaption, footer, #submit{
 body{
 	background: #d3dbde;
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	/*outline: 1px solid blue;*/
+	width: 100vw;
 }
 h1, h2, h3, h4, h5, h6{
-	color: /*#220120*/ #3b0238 /*#62045d*/;
+	color: #3b0238;
 	font-family: Times, "Times New Roman", serif;
 	text-transform: uppercase;
 }
 p{
 	color: #000;
-	font-size: 1em;
+	font-size: .988em;
 }
 img{
 	display: block;
@@ -50,29 +50,35 @@ img{
 	outline: 5px inset #62045d;
 }
 section{
-	margin: 0 .4em;
-	outline: 1px solid blue;
-	/*overflow: hidden;*/
+	margin: 0 .25em;
+}
+#submit{
+	background: #a5294c;
+	border: 3px inset #62045d;
+	color: #fff;
+	line-height: 1.6em;
+	padding: .1em .3em .15em;
+	text-shadow: 1px 1px 0 #000;
 }
 
 /* Header styling
 ---------------------------*/
 .banner{
+	padding: .5em 0 0;
 	width: auto;
-	padding: .5em 0;
 }
 .banner h1{
 	text-align: center;
 }
 .logo img{
 	display: block;
+	margin: auto;
 	max-width: 75px;
 	outline: none;
-	margin: auto;
 }
 h1{
 	font-size: 1.91em;
-	margin: .2em 0 .2em;
+	margin: .2em 0;
 	width: auto;
 }
 
@@ -103,9 +109,9 @@ h1{
 }
 
 .there{/*nav 'top' button*/
-		position: fixed;
-		bottom: 10px;
-		right: 10px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
 	}
 
 
@@ -116,8 +122,8 @@ h1{
 	margin-top: .4em;
 }
 h2{
-	margin: 1em 0 1em .3em;
 	font-size: 1.6em;
+	margin: 1em 0 1em .3em;
 }
 p{
 	margin: 0 1em;
@@ -128,8 +134,8 @@ p{
 /*-- ****  cards  **** --*/
 
 h3{
-	margin: 1.6em 0 1em .3em;
 	font-size: 1.6em;
+	margin: 1.6em 0 1em .3em;
 }
 .cards figcaption{
 	margin: 1em 0 2em;
@@ -142,22 +148,15 @@ h3{
 ---------------------------*/
 /*-- ****  albums  **** --*/
 h4{
-	margin: 1.6em 0 1em .3em;
 	font-size: 1.6em;
+	margin: 1.6em 0 1em .3em;
 }
 h5{
-	margin: .8em 0 0 .3em;
 	font-size: 1.6em;
+	margin: .8em 0 0 .3em;
 }
 .albums > li{
 	list-style-type: none;
-}
-/*.albums figcaption:hover{
-	padding: 2em 0 0 0;
-	/*border: 1px solid black;
-	background: white;
-}*/
-
 }
 ol{
 	list-style-type: numbers;
@@ -173,23 +172,62 @@ span{
 }
 ol span{
 	float: right;
-	margin-right: 3em;
+	margin-right: 2.5em;
 }
 
 /* Main Form styling
 ---------------------------*/
 /*-- ****  form  **** --*/
 
-h6{
-	text-transform: none;
-	font-size: 1.6em;
+input, textarea, select{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
-.maim-form{
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+.main-form{
 	clear: right;
 }
 #form{
-	margin: 0 0 2em 3em;
+	margin: auto;
 }
+input, textarea{
+	width: 100%;
+}
+#main-field{
+	margin: auto;
+	max-width: 400px;
+	width: 85vw;
+}
+fieldset{
+	margin: .6em 0;
+}
+#zip{
+	width: 105px;
+}
+#birthday{
+	width: 120px;
+}
+textarea{
+	height: 80px;
+	margin-top: .3em;
+}
+#submit{
+	cursor: pointer;
+	margin-top: .8em;
+	width: 5.5em;
+}
+h6{
+	color: #a5294c;
+	font-size: 1.6em;
+	margin-left: .3em;
+	text-shadow: 1px 1px 0 #000;
+	text-transform: none;
+}
+
+
+
 /* Footer styles
 ---------------------------*/
 
@@ -198,6 +236,7 @@ h6{
 	color: color: #a5294c;
 	font-size: .75em;
 	height: 5em;
+	margin-top: 2em;
 	padding: 2em .6em;
 	width: 100vw;
 }
@@ -228,10 +267,9 @@ h6{
 		justify-content: space-around;
 	}
 	.main-nav li{
+		font-size: .96em;
 		margin: .3em;
 		padding: .2em;
-		/*outline: 1px solid blue;*/
-		font-size: .96em;
 	}
 	#about p{
 		margin: 0 2em;
@@ -241,13 +279,7 @@ h6{
 
 @media screen and (min-width: 500px){
 
-	#about{
-		margin: 0 6%;
-	}
-	#members{
-		margin: 0 6%;
-	}
-	#main-albums{
+	#about, #members, #main-albums{
 		margin: 0 6%;
 	}
 	#main-albums h3{
@@ -264,22 +296,28 @@ h6{
 	h5{
 		margin: 0;
 		margin-top: .8em;
-	
+	}
+	h6{
+		margin: .5em 7%; 
 	}
 	p{
 	margin: 1em 0 2em;
-	}
-	.main-form{
-		margin: 0 6%;
 	}
 }
 @media screen and (min-width: 600px){
 
 	section{
-		width: auto;
 		max-width: 900px;
+		width: auto;
 	}	
 }
+
+
+
+
+
+
+
 
 
 
