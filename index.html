@@ -36,7 +36,7 @@ FOOTER - copyrightht 2019-->
 
 <!-- ****  about  **** -->
 <section id="about">
-		<img src="images/band-sm.jpg" alt="Munford & Sons">
+		<img src="images/band-sma.png" alt="Munford & Sons">
 		<h2>About</h2>
 		<p>One of the most successful acts to come out of the 21st century's English folk revival, Mumford and Son’ agreeable fusion of bluegrass, folk, country, and rock found favor with audiences both at home and abroad. Formed in 2007 by singer/guitarist/drummer Marcus Mumford, vocalist and banjo/Dobro player Winston Marshall, vocalist/keyboardist Ben Lovett, and vocalist/bassist Ted Dwane, the quartet bonded over their shared love of roots music -- their moniker is meant to invoke the impression of an antiquated family business name.</p>
 
@@ -208,25 +208,30 @@ FOOTER - copyrightht 2019-->
 </main>
 <section class="main-form">
 <!-- ******  form  ****** -->
-<div id="form">
+			<div id="form">
   				<form id="questions" method="post" action="" name="questions">
-  					<h6>Sign up for the latest news</h6>
-  					<div><label for="f-name">First Name</label></div>
-  					<div><input type="text" id="f-name" name="f-name" placeholder="Your first name.."></div>
-  					<div><label for="l-name">Last Name</label></div>
-  					<div><input type="text" id="l-name" name="l-name" placeholder="Your last name.."></div>
+  					<h6>Sign up for our News Letter</h6>
+  					<fieldset id="main-field">
+  					<div>
+  						<label for="f-name">First Name</label>
+  						<input type="text" id="f-name" name="f-name" placeholder="Your first name..">
+  					</div>
+  					<div>
+  						<label for="l-name">Last Name</label>
+  						<input type="text" id="l-name" name="l-name" placeholder="Your last name..">
+  					</div>
   					<fieldset>
   						<legend>Address</legend>
   						<div>
   							<label for="street">Number and Street</label>
-  							<input id="street" name="street" type="text">
+  							<input id="street" name="street" type="text" placeholder="1234 Somewhere Ave.">
   						</div>
   						<div>
   							<label for="city">City</label>
   							<input id="city" name="city" type="text">
   						</div>
   						<div>
-  							<label for="state">State</label>
+  							<label for="state">State</label><br>
   							<!-- <input id="state" name="state" type="text"> -->
   							<select id="state" name="state">
 								<option value="AL">Alabama</option>
@@ -282,6 +287,10 @@ FOOTER - copyrightht 2019-->
 								<option value="WY">Wyoming</option>
 							</select>
   						</div>
+  						<div>
+  							<label for="zip">Zip Code</label><br>
+  							<input id="zip" name="zip" type="text">
+  						</div>
   					</fieldset>
   						<div>
   							<label for="birthday">Birthday</label><br>
@@ -290,15 +299,12 @@ FOOTER - copyrightht 2019-->
   					<fieldset>
 	  					<div>
 	  						<label for="example-email-input">Your Email</label>
-	  					</div>
-	  				
-		    			<div>
 		    				<input type="email" id="example-email-input" placeholder="example@mailbox.com">
 		    			</div>
 		    				<legend>Preference</legend>
-		    				<label for="html">HTML</label>
-		    				<input type="checkbox" name="html" id="html" value="html">
-		    				<label for="plain">Plain Text</label>
+		    				<label for="html" class="lbl-html">HTML</label>
+		    				<input type="checkbox" name="html" id="html" value="html"><br>
+		    				<label for="plain" class="lbl-plain">Plain Text</label>
 		    				<input type="checkbox" name="plain" id="plain" value="plain">
 	    			</fieldset>
 	    			<div>
@@ -314,6 +320,7 @@ FOOTER - copyrightht 2019-->
 	    			<div>
 	    				<input type="submit" id="submit" value="Contact">
 	    			</div>
+	    			</fieldset>
 	    		</form>
 			</div>
 	</section>
@@ -324,3 +331,4 @@ FOOTER - copyrightht 2019-->
 
 </body>
 </html>
+
