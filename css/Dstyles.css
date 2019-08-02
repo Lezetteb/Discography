@@ -26,8 +26,11 @@ nav, span, div, img, figure, figcaption, footer, #submit{
 	padding: 0;
 	text-decoration: none;
 }
-*, *:before, *:after {
+html{
 	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
 /* Main Content - phone sized
@@ -50,8 +53,12 @@ p{
 img{
 	display: block;
 	margin: auto;
-	max-width: 280px;
+	width: 280px;
 	outline: 5px inset #62045d;
+	transition: transform 0.5s;
+}
+img:focus, img:hover{
+	transform: scale(1.03);
 }
 section{
 	margin: 0 .25em;
@@ -82,6 +89,7 @@ h1{
 	margin: auto;
 	max-width: 75px;
 	outline: none;
+	transform: none;
 }
 
 /* Navigation styling
@@ -103,7 +111,7 @@ h1{
 	color: #a5294c;
 	font-size: 1.2em;
 	font-weight: bold;
-	text-shadow: 1px 1px 0 #000;
+	text-shadow: 1px 1px 0 #000, -1px -1px 0 #fff;
 }
 .main-nav a:focus, .main-nav a:hover{
 	text-decoration: underline;
@@ -142,7 +150,12 @@ h3{
 .cards li{
 	list-style-type: none;
 }
-
+.sor-mem-al{
+	margin-bottom: 2em;
+}
+.sor-mem-al2{
+	margin-bottom: 1em
+}
 /* Albums styling
 ---------------------------*/
 /*-- ****  albums  **** --*/
@@ -222,7 +235,7 @@ h6{
 	color: #a5294c;
 	font-size: 1.6em;
 	margin-left: .3em;
-	text-shadow: 1px 1px 0 #000;
+	text-shadow: 1px 1px 0 #000, -1px -1px 0 #fff;
 	text-transform: none;
 }
 
@@ -240,9 +253,9 @@ h6{
 }
 .footer a{
 	color: #a5294c;
-	font-size: .75em;
+	font-size: .85em;
 	font-weight: normal;
-	text-shadow: 1px 1px 0 #000;
+	text-shadow: 1px 1px 0 #000, -0.5px -0.54px 0 #bac6cb;
 }
 .footer a:focus, .footer a:hover{
 	text-decoration: underline;
@@ -471,7 +484,6 @@ h6{
 	}
 
 	*/
-
 
 
 
