@@ -4,16 +4,15 @@ HEADER - Discography: Mumford & Sons
 MAINCONTENT - Mumford & Sons band & music information
 FOOTER - copyrightht 2019
  Color Palette
-#000; - black ,
-#1E2422 - cool almost black
-#220120 - very dark purple,-
-#3b0238 - dark purple,
-#62045d - plum,
-#a5294c - warm cranberry,
-#88BEB1 - sage green-
-#718A94 - slate gray-   <maybe
-#d3dbde - light gray,
-#FFF; - white,
+#000; - black 
+#1E2422 - cool almost black-logo color
+#220120 - very dark purple
+#3b0238 - dark purple
+#62045d - plum
+#a5294c - warm cranberry
+#718A94 - slate gray
+#d3dbde - light gray
+#FFF; - white
 */
 /* Global styles
 ---------------------------*/
@@ -496,3 +495,7 @@ h6{
 		
 	}
 }
+
+
+
+
