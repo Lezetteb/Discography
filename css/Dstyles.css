@@ -77,6 +77,7 @@ section{
 .banner{
 	padding: .5em 0 0;
 	width: auto;
+	position: relative;
 }
 h1{
 	text-align: center;
@@ -126,11 +127,11 @@ h1{
 ---------------------------*/
 
 #about img{
-	margin-top: .4em;
+	margin-top: .6em;
 }
 h2{
 	font-size: 1.6em;
-	margin: 1em 0 1em .3em;
+	margin: 1em 0 .5em .3em;
 }
 p{
 	margin: 0 1em;
@@ -142,7 +143,7 @@ p{
 
 h3{
 	font-size: 1.6em;
-	margin: 1.6em 0 1em .3em;
+	margin: .6em 0 1em .3em;
 }
 .cards figcaption{
 	margin: 1em 0 2em;
@@ -266,16 +267,21 @@ h6{
 
 @media screen and (min-width: 400px){
 
-	nav{
-		width: 360px;
-		margin: auto;
-	}
 	.main-nav{
+		background: #d3dbde;
+		margin: auto;
 		margin-bottom: .3em;
+		/*outline: 1px solid blue;*/
+		position: sticky;
+		top: 0;
+		left: 0;
+		width: 100vw;
 	}
 	.main-nav ul{
 		flex-direction: row;
 		justify-content: space-around;
+		width: 360px;
+		margin: auto;
 	}
 	.main-nav li{
 		font-size: .96em;
@@ -289,9 +295,8 @@ h6{
 
 @media screen and (min-width: 500px){
 
-	nav{
-		width: 70vw;
-		margin: auto;
+	.main-nav ul{
+		width: 460px;
 	}
 	#about, #members, #main-albums{
 		margin: 0 1em;
@@ -407,11 +412,9 @@ h6{
 
 	@media screen and (min-width: 900px){
 
-		nav{
-		/*width: 70vw;*/
-		/*margin: auto;*/
-		max-width: 640px;
-	}
+		.main-nav ul{
+			width: 640px;
+		}
 		.cards img, .albums img{
 			max-width: 400px;
 		}
@@ -440,54 +443,56 @@ h6{
 	@media screen and (min-width: 1170px){
 
 		.site {
-			max-width: 1110px;
+			max-width: 1136px;
+			margin: auto;
 		}
-		.cards img, .albums img{
+		.cards{
+			max-width: 1110px;
+			margin: auto;
+		}
+		.cards img{
 			max-width: 250px;
 		}
-	}
-
-
-/* -------------------------------------------------------- 
-
-
-.whole-site{  contains everything in the body 
-
-	}
-	.banner{  contains the logo and the h1 'band name' 
-		
-	}
-	.site{  contains everything below the h1 'band name' including 
-				main-nav but ends before the footer 
-
-	}
-		nav{
-			
+		.albums{
+			grid-template-columns: repeat(5, 1fr);
+			grid-gap: 1em;
 		}
-		.content{  contains about, members and albums 
-
+		.albums img{
+			max-width: 208px;
 		}
-			#about{
-		
-			}
-			#members{
-		
-			}
-			#main-albums{
-		
-			}
-		.main-form{
-		
+		.album div{
+			width: 95%;
+			margin-left: 1em;
+			margin-bottom: 1.5em; 
+			max-width: 300px;
 		}
-	.footer{
-		
+		.album figcaption{
+			max-width: 300px;
+		}
+		h5{
+			font-size: 1.4em;
+		}
+		ol span{
+			margin-right: .8em;
+			padding: .34em 0 0;
+		}
+		ol li{
+			font-size: .86em;
+		}
 	}
 
-	*/
+		@media screen and (min-width: 1400px){
 
-
-
-
-
-
-
+		.site {
+			max-width: 1300px;
+		}
+		.cards{
+			max-width: 1110px;
+			margin: auto;
+		}
+		.albums img{
+			max-width: 230px;
+		}
+		
+	}
+}
