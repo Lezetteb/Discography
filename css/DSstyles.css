@@ -1,0 +1,230 @@
+/*Developer: Lezette Boutin
+Table of Contents
+HEADER - Discography: Mumford & Sons
+MAINCONTENT - Mumford & Sons band & music information
+FOOTER - copyrightht 2019
+ Color Palette
+#000; - black 
+#1E2422 - cool almost black-logo color
+#220120 - very dark purple
+#3b0238 - dark purple
+#62045d - plum
+#a5294c - warm cranberry
+#718A94 - slate gray
+#d3dbde - light gray
+#FFF; - white
+*/
+/* Global styles
+---------------------------*/
+/****** limited reset ******/
+html, body, main, section, h1, h2, h3, h4, h5, h6, p, a, ol, ul, li, 
+nav, span, div, img, figure, figcaption, footer, #submit{
+	border: 0;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+/* Main Content - phone sized
+---------------------------*/
+.whole-site2{
+	display: grid;
+	grid-template-areas: 
+		"banner"
+		"main-nav"
+		"site"
+		"footer";
+		/*grid-gap: 1em;*/
+	justify-content: center;
+}
+.banner{
+	grid-area: banner;
+}
+.main-nav{
+	grid-area: main-nav;
+}
+.site{
+	grid-area: site;
+	margin: 0 2em;
+}
+.footer{
+	grid-area: footer;
+}
+
+body{
+	background: #d3dbde;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	width: 100vw;
+}
+h1, h2, h3, h4, h5, h6, strong{
+	color: #3b0238;
+	font-family: Times, "Times New Roman", serif;
+	text-transform: uppercase;
+}
+p{
+	color: #000;
+	font-size: .98em;
+	margin: 0 1em;
+}
+img{
+	display: block;
+	margin: auto;
+	width: 280px;
+	outline: 5px inset #62045d;
+	transition: transform 0.5s;
+}
+img:focus, img:hover{
+	transform: scale(1.03);
+}
+section{
+	margin: 0 .25em;
+}
+/* Header styling
+---------------------------*/
+.banner{
+	padding: .5em 0 0;
+	width: auto;
+	position: relative;
+}
+h1{
+	text-align: center;
+	font-size: 1.91em;
+	margin: .2em 0;
+	width: auto;
+}
+.logo img{
+	display: block;
+	margin: auto;
+	max-width: 75px;
+	outline: none;
+	transform: none;
+}
+/* Navigation styling
+---------------------------*/
+
+.main-nav ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	list-style-type: none;
+}
+.main-nav li{
+	margin: .5em 2em 0;
+	padding: .15em 3em;
+}
+.main-nav a{
+	color: #a5294c;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #000, -1px -1px 0 #fff;
+}
+.main-nav a:focus, .main-nav a:hover{
+	text-decoration: underline;
+}
+.there{ /*nav 'top' button*/
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+/* About styling
+---------------------------*/
+
+#about img{
+	margin-top: .8em;
+}
+h2, h3, h4{
+	font-size: 1.6em;
+	margin: .6em .3em 1em;
+}
+/* Band Members styling
+---------------------------*/
+/*-- ****  cards  **** --*/
+
+strong{
+	font-size: 1.3em;
+}
+.sor-links{
+	color: #a5294c;
+	font-size: 1.3em;
+	margin: .3em;
+}
+
+/* Main Footer styling
+---------------------------*/
+/*-- ****  footer  **** --*/
+
+.footer{
+	background: #718A94;
+	color: #a5294c;
+	font-size: .75em;
+	height: 80px;
+	margin-top: 2em;
+	padding: 1em .7em;
+	width: 100vw;
+}
+
+/* larger screen styles
+---------------------------*/
+
+@media screen and (min-width: 400px){
+
+	.main-nav{
+		background: #d3dbde;
+		margin: auto;
+		position: sticky;
+		top: 0;
+		left: 0;
+		width: 100vw;
+	}
+	.main-nav ul{
+		flex-direction: row;
+		justify-content: center;
+		margin: 0 1em;
+	}
+	.main-nav li{
+		font-size: .96em;
+		margin: .3em 1em;
+		padding: .2em;
+	}
+	img{
+		width: 380px;
+	}
+}
+
+@media screen and (min-width: 500px){
+
+	.logo img{
+		display: inline-block;
+		margin: .5em 10% 0 2%;
+		position: absolute;
+	}
+	img{
+		width: 400px;
+	}
+}
+
+@media screen and (min-width: 900px){
+
+
+	section{
+		width: 800px;
+		margin: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
