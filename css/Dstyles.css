@@ -35,6 +35,32 @@ html{
 /* Main Content - phone sized
 ---------------------------*/
 
+.whole-site{
+	display: grid;
+	grid-template-areas: 
+		"banner"
+		"main-nav"
+		"site"
+		"form"
+		"footer";
+	justify-content: center;
+}
+.banner{
+	grid-area: banner;
+}
+.main-nav{
+	grid-area: main-nav;
+}
+.site{
+	grid-area: site;
+}
+.main-form{
+	grid-area: form;
+}
+.footer{
+	grid-area: footer;
+}
+
 body{
 	background: #d3dbde;
 	font-family: 'Helvetica', 'Arial', sans-serif;
@@ -47,7 +73,8 @@ h1, h2, h3, h4, h5, h6{
 }
 p{
 	color: #000;
-	font-size: .988em;
+	font-size: .98em;
+	margin: 0 1em;
 }
 img{
 	display: block;
@@ -61,6 +88,9 @@ img:focus, img:hover{
 }
 section{
 	margin: 0 .25em;
+}
+#main-field{
+	margin: 0 15%;
 }
 #submit{
 	background: #a5294c;
@@ -116,7 +146,7 @@ h1{
 .main-nav a:focus, .main-nav a:hover{
 	text-decoration: underline;
 }
-.there{/*nav 'top' button*/
+.there{ /*nav 'top' button*/
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
@@ -131,9 +161,6 @@ h1{
 h2{
 	font-size: 1.6em;
 	margin: 1em 0 .5em .3em;
-}
-p{
-	margin: 0 1em;
 }
 
 /* Band Members styling
@@ -150,14 +177,9 @@ h3{
 .cards li{
 	list-style-type: none;
 }
-.sor-mem-al{
-	margin-bottom: 2em;
-}
-.sor-mem-al2{
-	margin-bottom: 1em
-}
+
 /* Albums styling
----------------------------*/
+---------------------------
 /*-- ****  albums  **** --*/
 
 h4{
@@ -177,15 +199,18 @@ ol{
 .album ol{
 	margin: 1.5em 0 2.5em 2.6em;
 }
+.albums figcaption{
+	margin: auto;
+	max-width: 290px;
+}
 span{
 	font-family: 'Helvetica', 'Arial', sans-serif;
 	font-size: .8em;
 	font-weight: lighter;
-	padding: .205em 0 0;
+	padding: .225em 0 0;
 }
 ol li{
-	font-size: .91em;
-
+	font-size: 1em;
 }
 ol span{
 	float: right;
@@ -197,7 +222,6 @@ ol span{
 /*-- ****  form  **** --*/
 
 input, textarea, select{
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 .main-form{
@@ -211,7 +235,7 @@ input, textarea{
 }
 #main-field{
 	margin: auto;
-	width: 85vw;
+	max-width: 700px;
 }
 fieldset{
 	margin: .6em 0;
@@ -233,21 +257,22 @@ textarea{
 }
 h6{
 	color: #a5294c;
-	font-size: 1.6em;
-	margin-left: .3em;
+	font-size: 1.8em;
+	margin: 0 0 .2em .3em;
 	text-shadow: 1px 1px 0 #000, -1px -1px 0 #fff;
 	text-transform: none;
 }
 
-/* Footer styles
+/* Main Footer styling
 ---------------------------*/
+/*-- ****  footer  **** --*/
 
 .footer{
 	background: #718A94;
 	color: #a5294c;
 	font-size: .75em;
 	height: 6%;
-	margin-top: .5em;
+	margin-top: 2em;
 	padding: 1em .7em;
 	width: 100vw;
 }
@@ -261,7 +286,7 @@ h6{
 	text-decoration: underline;
 }
 
-/* larger screen styles and older browsers
+/* larger screen styles
 ---------------------------*/
 
 @media screen and (min-width: 400px){
@@ -269,8 +294,6 @@ h6{
 	.main-nav{
 		background: #d3dbde;
 		margin: auto;
-		margin-bottom: .3em;
-		/*outline: 1px solid blue;*/
 		position: sticky;
 		top: 0;
 		left: 0;
@@ -278,224 +301,116 @@ h6{
 	}
 	.main-nav ul{
 		flex-direction: row;
-		justify-content: space-around;
-		width: 360px;
-		margin: auto;
+		justify-content: center;
+		margin: 0 1em;
 	}
 	.main-nav li{
 		font-size: .96em;
-		margin: .3em;
+		margin: .3em 1em;
 		padding: .2em;
 	}
-	#about p{
-		margin: 0 2em;
+	.card{
+
+		justify-content: center;
+	}
+	img{
+		width: 380px;
 	}
 }
 
 @media screen and (min-width: 500px){
 
-	.main-nav ul{
-		width: 460px;
-	}
-	#about, #members, #main-albums{
-		margin: 0 1em;
-	}
-	#main-albums h3{
-		margin: 1em 6%; 
-	}
-	.cards figcaption{
-		margin: auto;
-		max-width: 90%;
-	}
-	.albums figcaption{
-		margin: auto;
-		max-width: 420px;
-	}
-	img{
-		max-width: 400px;
-	}
-	h5{
-		margin: 0;
-		margin-top: .8em;
-	}
-	h6{
-		margin: .5em 7%; 
-	}
-	p{
-		margin: 1em 0 2em;
-	}
 	.logo img{
 		display: inline-block;
 		margin: .5em 10% 0 2%;
 		position: absolute;
 	}
-	h1{
-		display: block;
-		text-align: center;
-		font-size: 2em;
+	h2, h3, h4{
+		margin-left: 1em;
 	}
-	.site {
-		max-width: 98vw;
-		margin: 0 auto;
-	}
-	.footer{
-		font-size: .8em;
-		padding-left: 2em;
-		margin-top: 3vw;
+	img{
+		width: 400px;
 	}
 }
 
-	/* Grid for modern browsers
-------------------------------------------*/
+@media screen and (min-width: 600px){
 
-@supports (grid-area: auto){
-
-	@media screen and (min-width: 600px){
-
-	.site{ 
-		margin: auto;
+	#about p{
+		margin: 0 6em;
 	}
-
-	/*Band Members and Album styling
-	---------------------------*/
-
-		.cards, .albums{
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			grid-gap: 1.5em;
-		}
-		.cards img, .albums img{
-			max-width: 260px;
-		}
-		.album ol{
-			margin: 0;
-		}
-		.album div{
-			width: 95%;
-			margin-left: 1.5em;
-			margin-bottom: 1.5em; 
-			max-width: 300px;
-		}
-		.album figcaption{
-			max-width: 300px;
-		}
-		h5{
-			font-size: 1.4em;
-		}
-		h5 span{
+	.cards, .albums, h6{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;	
+	}
+	.card{
+		max-width: 260px;
+		margin: 0 .5em;
+	}
+	.cards img, .albums img{
+		max-width: 260px;
+		margin: 0 .5em;
+	}
+	ol li{
+		font-size: .92em;
+	}
+	ol span{
+		padding: .35em 0 0;
+	}
+	h5 span{
 			font-size: .6em;
 		}
-
-		 /*Form styling
-		---------------------------*/
-
-		h6{
-			text-align: center;
-			font-size: 1.91em;
-			width: auto;
-		}
+	h2, h3, h4{
+		margin-left: 2em;
 	}
-
-	@media screen and (min-width: 700px){
-		
-		.cards img, .albums img{
-			max-width: 310px;
-		}
-		#main-field{
-			max-width: 600px;
-		}
-		.site {
-			max-width: 680px;
-		}
-	}
-
-	@media screen and (min-width: 900px){
-
-		.main-nav ul{
-			width: 640px;
-		}
-		.cards img, .albums img{
-			max-width: 400px;
-		}
-		.site {
-			max-width: 850px;
-		}
-	}
-
-	@media screen and (min-width: 1065px){
-
-		.cards, .albums{
-			grid-template-columns: repeat(4, 1fr);
-			grid-gap: 1em;
-		}
-		.cards img, .albums img{
-			max-width: 238px;
-		}
-		#main-albums{
-			margin: 1em;
-		}
-		.site {
-			max-width: 1025px;
-		}
-	}
-
-	@media screen and (min-width: 1170px){
-
-		.site {
-			max-width: 1136px;
-			margin: auto;
-		}
-		.cards{
-			max-width: 1110px;
-			margin: auto;
-		}
-		.cards img{
-			max-width: 250px;
-		}
-		.albums{
-			grid-template-columns: repeat(5, 1fr);
-			grid-gap: 1em;
-		}
-		.albums img{
-			max-width: 208px;
-		}
-		.album div{
-			width: 95%;
-			margin-left: 1em;
-			margin-bottom: 1.5em; 
-			max-width: 300px;
-		}
-		.album figcaption{
-			max-width: 300px;
-		}
-		h5{
-			font-size: 1.4em;
-		}
-		ol span{
-			margin-right: .8em;
-			padding: .34em 0 0;
-		}
-		ol li{
-			font-size: .86em;
-		}
-	}
-
-		@media screen and (min-width: 1400px){
-
-		.site {
-			max-width: 1300px;
-		}
-		.cards{
-			max-width: 1110px;
-			margin: auto;
-		}
-		.albums img{
-			max-width: 230px;
-		}
-		
+	p{
+		margin: 0 0 0 .8em;
 	}
 }
 
+@media screen and (min-width: 800px){
+
+	#about p{
+		margin: 0 9em;
+	}
+	h2, h3, h4{
+		margin-left: 3em;
+	}	
+}
+
+@media screen and (min-width: 1000px){
+
+	#about p{
+		margin: 0 12em;
+	}
+	h2, h3, h4{
+		margin-left: 5em;
+	}
+}
+
+@media screen and (min-width: 1250px){
+
+	.card{
+		margin: 0 .8em;
+	}
+}
+
+@media screen and (min-width: 1500px){
+
+	.album{
+		margin: 0 .6em;
+	}
+	.card{
+		margin: 0 1em;
+	}
+	#about p{
+		margin: 0 15em;
+	}
+	h2, h3, h4{
+		margin-left: 8em;
+	}
+}
 
 
 
