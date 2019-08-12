@@ -396,6 +396,13 @@ h6{
 		margin: 0 .5em;
 	}
 }
+@media screen and (min-width: 900px){
+
+	#about img{
+		width: 628px;
+		margin-top: .8em;
+	}
+}
 
 @media screen and (min-width: 1000px){
 
@@ -470,6 +477,10 @@ h6{
 	}
 	#about p{
 		margin: 0 15em;
+	}
+	#about img{
+		width: 1024px;
+		margin-top: .8em;
 	}
 }
 
