@@ -9,7 +9,9 @@ FOOTER - copyrightht 2019
 #220120 - very dark purple
 #3b0238 - dark purple
 #62045d - plum
+#7b0574 - lighter plum
 #a5294c - warm cranberry
+#7c1f29 - darker cranberry
 #718A94 - slate gray
 #d3dbde - light gray
 #FFF; - white
@@ -227,12 +229,15 @@ ol span{
 
 input, textarea, select{
 	box-sizing: border-box;
+	border: 2px inset #7b0574;
 }
 .main-form{
 	clear: right;
 }
 #form{
 	margin: auto;
+	color: #7c1f29;
+	font-weight: bold;
 }
 input, textarea{
 	width: 100%;
@@ -240,6 +245,7 @@ input, textarea{
 #main-field{
 	margin: auto;
 	max-width: 700px;
+	border: 5px inset #62045d;
 }
 fieldset{
 	margin: .6em 0;
@@ -256,8 +262,10 @@ textarea{
 }
 #submit{
 	cursor: pointer;
-	margin-top: .6em;
-	width: 5.5em;
+	line-height: 1.6em;
+	margin: .3em;
+	padding: .2em;
+	width: 5.6em;
 }
 h6{
 	color: #a5294c;
