@@ -94,14 +94,6 @@ section{
 #main-field{
 	margin: 0 15%;
 }
-#submit{
-	background: #a5294c;
-	border: 3px inset #62045d;
-	color: #fff;
-	line-height: 1.6em;
-	padding: .1em .3em .15em;
-	text-shadow: 1px 1px 0 #000;
-}
 
 /* Header styling
 ---------------------------*/
@@ -261,10 +253,15 @@ textarea{
 	margin-top: .3em;
 }
 #submit{
+	background: #a5294c;
+	border: 3px inset #62045d;
+	color: #fff;
 	cursor: pointer;
-	line-height: 1.6em;
-	margin: .3em;
-	padding: .2em .3em .45em .2em;
+	line-height: 1.8em;
+	margin: 1em .3em .3em;
+	padding-bottom: .33em;
+	text-align: center;
+	text-shadow: 1px 1px 0 #000;
 	width: 5.6em;
 }
 h6{
